@@ -1,0 +1,163 @@
+body, header, nav, main, footer, img, h1, ul, section, aside, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* {
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+h1 {
+  color: #e0875c;
+  text-align: center;
+  padding: 1%;
+  font-size: 5em;
+}
+
+h2 {
+  color: #e0875c;
+  text-align: center;
+  font-size: 6em;
+  font-family: "Lunasima", sans-serif;
+}
+
+nav li a:hover {
+  color: #f7c792;
+  font-size: 1.5em;
+}
+nav {
+  background-color: #d1a688;
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+nav li {
+  display: block;
+  font-size: 2.25em;
+  border-top: 1px solid #e5e9fc;
+}
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.25em 0.25em;
+  text-decoration: none;
+}
+
+body {
+  background-color: #edd2c5;
+}
+
+.small {
+  max-width: 95%;
+  padding: 3%;
+}
+
+.small2 {
+  padding: 3%;
+  max-width: 90%;
+}
+
+.container {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ column-gap: 1px;
+}
+
+.container2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ column-gap: 1px;
+}
+
+p {
+  font-size: 2.75em;
+  font-family: "Lunasima", sans-serif;
+  color: #e0875c;
+  text-shadow: #62664d 2px 0 2px;
+  padding: 3%;
+}
+
+button {
+  align-content: center;
+  padding: 1em;
+  background-color: #fae0c3;
+  border-radius: 5px;
+  display: inline-block;
+  font-style: oblique;
+  font-size: 22px;
+  border-color: #ed993b;
+  color: #e0875c;
+  transform: translate(225%)
+}
+
+button:hover {
+  background-color: #f7d4ad;
+}
+
+.acorn {
+  max-width: 90%;
+  padding: 5%;
+  padding-top: 15%;
+}
+
+.text1 {
+  padding-top: 0;
+  padding: 1.5%;
+}
+
+.text2 {
+  padding-bottom: 0;
+}
+
+video {
+  padding: 1%;
+}
+
+table, th, td {
+  border: 3px solid #d1a688;
+  color: #e0875c;
+}
+
+th, td {
+  padding: 0.5%;
+}
+
+th {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+td {
+  font-size: 2em;
+}
+
+table {
+  padding: 0.5%;
+}
+
+tr:nth-child(even) {
+  background-color: #f5e7d7;
+}
+
+tr:nth-child(odd) {
+  background-color: #f7e0c6;
+}
+
+footer {
+  color: #e0875c;
+  text-align: center;
+  padding: 1%;
+  font-size: 1em;
+  text-shadow: gray 1px 0 1px;
+}
+
+.inStock {
+  color: green;
+}
+
+.outOfStock {
+  color: red;
+}

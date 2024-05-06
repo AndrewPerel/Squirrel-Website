@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Everything Squirrel</title>
+  </head>
+
+    <header>
+      <h1>Everything Squirrel</h1>
+    </header>
+
+    <nav class="tab-desk">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Learn</a></li>
+        <li><a href="stories.html">Read</a></li>
+        <li><a href="store.html">Shop</a></li>
+        <li><a href="forums.html">Forums</a></li>
+      </ul>
+    </nav>
+
+    <h2>Learn about squirrels!</h2>
+
+    <body>
+
+      <div class="container">
+        <div>
+          <button onclick="showVideo()" style="transform: translateX(400%);">Watch</button>
+
+          <div id="video" style="display: none;">
+            <video width="1000" controls>
+              <source src="media/squirrelfacts.mp4" type="video/mp4">
+              Legacy Browser: Video element not supported.
+            </video>
+          </div>
+
+          <script>
+          function showVideo() {
+            var x = document.getElementById("video");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          </script>
+        </div>
+
+        <div>
+          <button onclick="showText()" style="transform: translateX(400%);">Read</button>
+
+          <div id="text" style="display: none;">
+            <p style="font-size: 1.4em; margin: 0; padding-top: 5px;">Squirrels are members of the family Sciuridae, a family that includes small or medium-sized rodents. The squirrel family includes tree squirrels, ground squirrels (including chipmunks and prairie dogs, among others), and flying squirrels. Squirrels are indigenous to the Americas, Eurasia, and Africa, and were introduced by humans to Australia. The earliest known fossilized squirrels date from the Eocene epoch, and among other living rodent families, the squirrels are most closely related to the mountain beaver and to the dormice. Squirrels mate either once or twice a year and, following a gestation period of three to six weeks, give birth to a number of offspring that varies by species. The young are altricial, being born naked, toothless, and blind. In most species of squirrel, the female alone looks after the young, which are weaned at six to ten weeks and become sexually mature by the end of their first year. In general, the ground-dwelling squirrel species are social, often living in well-developed colonies, while the tree-dwelling species are more solitary. Ground squirrels and tree squirrels are usually either diurnal or crepuscular, while the flying squirrels tend to be nocturnal—except for lactating flying squirrels and their young, which have a period of diurnality during the summer. During hot periods, squirrels have been documented to sploot, or lay their stomachs down on cool surfaces. Squirrels, like other rodents, employ species-specific strategies to store food, buffering against periods of scarcity. In temperate regions, squirrels commonly cache nuts beneath leaf litter, inside hollow trees, or underground.  However, in subtropical and humid environments, traditional caching can lead to mold growth, decomposition, or premature germination. To counteract these challenges, some squirrels, particularly in subtropical zones, hang nuts or mushrooms on tree branches. This behavior, believed to minimize fungal infections and reduce the risk of food loss, also inadvertently aids certain trees, like Cyclobalanopsis, in expanding their range, with forgotten or dislodged nuts that can sprout in new locations, influencing forest ecology. Two species of flying squirrel, the particolored flying squirrel and Hainan flying squirrel aid such caching by carving grooves into the nuts to fix the nuts tightly between small intersecting twigs, akin to the mortise-tenon joint in carpentry.</p>
+            <p style="font-size:1.2em; margin: 0; padding-top: 1px; color: #f5c28c;">“Squirrel.” Wikipedia, Wikimedia Foundation, 17 Mar. 2024, en.wikipedia.org/wiki/Squirrel.<p>
+          </div>
+
+          <script>
+          function showText() {
+            var x = document.getElementById("text");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          </script>
+        </div>
+      </div>
+
+    </body>
+
+    <footer>Website created for portfolio by Andrew Perel</footer>
+
+</html>
