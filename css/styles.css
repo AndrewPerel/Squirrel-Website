@@ -161,3 +161,11 @@ footer {
 .outOfStock {
   color: red;
 }
+
+.gradient {
+  background-image: radial-gradient(#f5e7d7 0%, #f7e0c6 51%, #f5e7d7 100%);
+}
+
+.btn:hover {
+  background-image: radial-gradient(#f7e0c6 0%, #f5e7d7 51%, #fad7a7 100%);
+}

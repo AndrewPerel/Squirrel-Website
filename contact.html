@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Everything Squirrel</title>
+  </head>
+
+    <header>
+      <h1>Everything Squirrel</h1>
+    </header>
+
+    <nav class="tab-desk">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Learn</a></li>
+        <li><a href="stories.html">Read</a></li>
+        <li><a href="store.html">Shop</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <body>
+      <p id="text" style="text-align:center">Choose a method of reaching us!</p>
+
+      <div>
+
+        <button onclick="phoneNumber()" class="btn gradient" style="font-size: 4em; width: 250px; margin: 1%; transform: translateX(265%);">Call</button>
+        <script>
+        function phoneNumber() {
+          document.getElementById("text").innerHTML = "You can call us at (000) 000-0000";
+        }
+        </script>
+
+        <button onclick="email()" class="btn gradient" style="font-size: 4em; width: 250px; margin: 1%; transform: translateX(265%);">Email</button>
+        <script>
+        function email() {
+          document.getElementById("text").innerHTML = "Contact us at SquirrelEmailOfficial@gmail.com";
+        }
+        </script>
+      </div>
+      <div>
+        <button onclick="mail()" class="btn gradient" style="font-size: 4em; width: 250px; margin: 1%; transform: translateX(265%);">Mail</button>
+        <script>
+        function mail() {
+          document.getElementById("text").innerHTML = "Send mail to Southport, ME 04576";
+        }
+        </script>
+
+        <button onclick="createTicket()" class="btn gradient" style="font-size: 4em; width: 250px; margin: 1%; transform: translateX(265%);">Ticket</button>
+        <script>
+        function createTicket() {
+          document.getElementById("text").innerHTML = "Support Ticket created, we will answer back shortly";
+        }
+        </script>
+
+      </div>
+    </body>
+
+    <footer>Website created for portfolio by Andrew Perel</footer>
+
+</html>
